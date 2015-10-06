@@ -1,0 +1,136 @@
+@import url("righthand_fixed_navigation_layout.css");
+
+body {
+  font-family: 'Libre Baskerville', 'Trebuchet MS', Verdana, Helvetica, sans-serif;
+  background-color: Window; color: WindowText;
+}
+
+header {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid ActiveBorder;
+}
+
+nav {
+  background-color: ScrollBar;
+  color: MenuText;
+}
+
+nav h2 {
+  background-color: transparent;
+  color: MenuText;
+}
+
+nav > ul {
+  color: inherit;
+  background-color: transparent;
+}
+
+nav > ul > li {
+  color: inherit;
+  background-color: transparent; 
+}
+
+nav > ul > li > ul {
+  color: inherit;
+  background-color: transparent;
+}
+
+nav > ul > li.active a, nav > ul > li > ul > li.active a {
+  border-left: 10px solid InactiveBorder;
+  background-color: InactiveBorder;
+  color: CaptionText;
+}
+
+nav li.active a {
+  border-right: none;
+  border-left: none;
+  background-color: InactiveBorder;
+  color: CaptionText;
+}
+
+nav li.active a:hover, nav li.active a:focus {
+  border-right: none;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  background-color: InactiveBorder;
+  color: CaptionText;
+}
+
+nav > ul > li.active > ul > li a:link,
+nav > ul > li.active > ul > li a:visited {
+  border-top: none;
+  border-right: 10px solid InactiveBorder;
+  border-bottom: none;
+  border-left: 10px solid InactiveBorder;
+}
+
+nav > ul > li.active > ul > li a:hover,
+nav > ul > li.active > ul > li a:focus,
+nav > ul > li.active > ul > li a:active {
+  border-top: none;
+  border-right: 10px solid ActiveCaption;
+  border-bottom: none;
+  border-left: 10px solid ActiveCaption;
+}
+
+nav a:link,
+nav a:visited, 
+nav a:hover, nav a:focus,
+nav a:active {
+  font-size: 1em;
+  text-decoration: none;
+  padding-left: 2px;
+}
+
+nav a:link,
+nav a:visited {
+  border-top: 1px solid Menu;
+  border-right: 10px solid Menu;
+  border-bottom: 1px solid Menu;
+  border-left: 10px solid Menu;
+  background-color: Menu;
+  color: MenuText;
+}
+
+nav a:hover, nav a:focus,
+nav a:active {
+  border-top: 1px solid Scrollbar;
+  border-right: 10px solid ActiveCaption;
+  border-bottom: 1px solid Scrollbar;
+  border-left: 10px solid ActiveCaption;
+}
+
+a:link, a:visited {
+  background-color: ButtonFace;
+  color: ButtonText;
+}
+
+a:hover, a:focus, a:active {
+  background-color: Highlight;
+  color: ButtonText;
+  text-decoration: none;
+}
+
+footer {
+  border-color: ThreeDDarkShadow;
+  border-style: solid;
+  color: WindowText;
+  background-color: ThreeDFace;
+}
+
+footer a:link, footer a:visited {
+  background-color: Menu;
+  color: MenuText;
+}
+
+footer a:hover, footer a:focus, footer a:active {
+  background-color: Highlight;
+  color: ButtonText;
+}
+
+
+main ul li {
+  list-style-type: square;
+}
+
