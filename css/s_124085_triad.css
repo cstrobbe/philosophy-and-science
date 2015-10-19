@@ -10,6 +10,34 @@ header {
   color: #89A0C2;
 }
 
+#home header {
+  height: 257px; /* height and width of Raphael_SchoolOfAthens.jpg*/
+  width: 1521px;
+  max-width: 75% /*62em*/;
+  padding: 0;
+  background: #09316D 50% 0 url('./Raphael_SchoolOfAthens.jpg') repeat-x; /* old IE fallback */
+  background-position: left;
+  text-align: left;
+}
+#home h1 { font-size: 3.2em; letter-spacing: 1.3px; }
+#home h1 {
+  padding: 20px 0 0 20px;
+  margin: 0 0 0 0;
+  color: #fff /*#FDDB58*/ /*#89A0C2*/;
+  background-color: transparent;
+  font-weight: bold;
+  line-height: 1.35em; /* CS: added to prevent overlapping text on browser zoom */
+
+  font-family: 'Julius Sans One', 'Trebuchet MS', Verdana, sans-serif;
+
+  height: 113px; /* height of #header minus h1's top padding */
+}
+
+h1 .h1txt {
+  background: rgba(9, 49, 109, 0.6);
+  padding: 4px;
+}
+
 nav {
   background-color: #EEC62A;
   color: inherit;
@@ -108,7 +136,7 @@ main ul li {
 #introquote {
   font-size: 1.1em;
   font-style: italic;
-  width: 600px;
+  width: 700px;
   margin: 0.25em 0;
   padding: 0.25em 40px;
   line-height: 1.45;
