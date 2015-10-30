@@ -10,26 +10,46 @@ header {
   color: #89A0C2;
 }
 
-#home header {
+#homepage header, #philsciencepage header, #sciencepage header, #philosophypage header {
+  text-align: left;
+}
+
+#homepage header, #philsciencepage header {
   height: 257px; /* height and width of Raphael_SchoolOfAthens.jpg*/
   width: 1521px;
   max-width: 75% /*62em*/;
   padding: 0;
   background: #09316D 50% 0 url('./Raphael_SchoolOfAthens.jpg') repeat-x; /* old IE fallback */
   background-position: left;
-  text-align: left;
 }
-#home h1 { font-size: 3.2em; letter-spacing: 1.3px; }
-#home h1 {
+
+#sciencepage header {
+  height: 247px; /* height and width of PeonyNebula.jpg*/
+  width: 1598px;
+  max-width: 75% /*62em*/;
+  padding: 0;
+  background: #09316D 50% 0 url('./PeonyNebula.jpg') repeat-x; /* old IE fallback */
+  background-position: left;
+}
+
+#philosophypage header {
+  height: 247px; /* height and width of David_MortDeSocrate.jpg*/
+  width: 1368px;
+  max-width: 75% /*62em*/;
+  padding: 0;
+  background: #09316D 50% 0 url('./David_MortDeSocrate.jpg') repeat-x; /* old IE fallback */
+  background-position: left;
+}
+
+#homepage h1, #philsciencepage h1, #philosophypage h1, #sciencepage h1 { 
+  font-size: 3.2em; letter-spacing: 1.3px; 
   padding: 20px 0 0 20px;
   margin: 0 0 0 0;
   color: #fff /*#FDDB58*/ /*#89A0C2*/;
   background-color: transparent;
   font-weight: bold;
   line-height: 1.35em; /* CS: added to prevent overlapping text on browser zoom */
-
   font-family: 'Julius Sans One', 'Trebuchet MS', Verdana, sans-serif;
-
   height: 113px; /* height of #header minus h1's top padding */
 }
 
@@ -104,6 +124,16 @@ a:hover, a:focus, a:active {
   color: #FFF;
   text-decoration: none;
 }
+
+/* \25B7 gives white/transparent triangle; see also https://en.wikipedia.org/wiki/Geometric_Shapes */
+/*
+a[href^="https://www.youtube.com"]:after {
+  content: ' \25B6 '; 
+  color: white;
+  background-color: #E62117;
+  border-radius: 3px;
+  font-size: 0.9em;
+}*/
 
 footer {
   border-color: #A54100;
