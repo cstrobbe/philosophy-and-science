@@ -104,7 +104,7 @@ rp, rt {
   display: none;
 }
 
-.booktitle {
+.booktitle, .journal, .magazine, .newspaper {
   font-style: italic;
 }
 
