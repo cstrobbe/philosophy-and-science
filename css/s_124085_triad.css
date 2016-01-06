@@ -135,6 +135,11 @@ a[href^="https://www.youtube.com"]:after {
   font-size: 0.9em;
 }*/
 
+aside {
+  background-color: #FDDB58;
+  color: #000;
+}
+
 footer {
   border-color: #A54100;
   border-style: solid;

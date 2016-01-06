@@ -81,6 +81,10 @@ main a, footer a {
   padding-right: 2px; padding-left: 2px;
 }
 
+aside {
+  padding: 20px;
+}
+
 footer {
   margin-top: 60px;
   padding-left: 4px;
