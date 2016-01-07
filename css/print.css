@@ -1,0 +1,75 @@
+@media print {
+
+  body {
+    font-family: 'Libre Baskerville', 'Trebuchet MS', Verdana, Helvetica, sans-serif;
+    background-color: transparent; color: #000;
+    font-size: 12pt;
+  }
+
+
+  #homepage header, .philsciencepage header, .sciencepage header, .philosophypage header {
+    text-align: left;
+  }
+
+  #homepage h1, .philsciencepage h1, .philosophypage h1, .sciencepage h1 { 
+    font-size: 2em; letter-spacing: 1.3px; 
+    color: #89A0C2;
+    background-color: transparent;
+    font-weight: bold;
+    line-height: 1.35em; /* CS: added to prevent overlapping text on browser zoom */
+    font-family: 'Julius Sans One', 'Trebuchet MS', Verdana, sans-serif;
+  }
+
+  aside {
+    background-color: #FDDB58;
+    color: #000;
+  }
+
+  footer {
+    border-color: #A54100;
+    border-style: solid;
+    color: #7C3100;
+    background-color: #FFF;
+  }
+
+  footer a:link, footer a:visited {
+    background-color: #FFF;
+    color: #7C3100;
+  }
+
+  footer a:hover, footer a:focus, footer a:active {
+    background-color: #A54100;
+    color: #FFF;
+  }
+
+
+  h2, h3, h4, h5, h6 {
+    color: #7C3100;
+    background-color: transparent;
+  }
+
+
+  #introquote {
+    font-size: 1.1em;
+    font-style: italic;
+    width: 700px;
+    margin: 0.25em 0;
+    padding: 0.25em 40px;
+    line-height: 1.45;
+    color: #222222;
+  }
+
+  blockquote cite {
+    color: #555;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+  }
+
+
+  nav, nav h2, nav ul {
+    display: none;
+  }
+
+}
+
