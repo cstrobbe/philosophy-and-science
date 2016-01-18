@@ -69,7 +69,7 @@ nav h2 {
 }
 
 nav > ul {
-  color: #41409A;
+  color: black /*#41409A*/;
   background-color: transparent;
 }
 
@@ -83,8 +83,16 @@ nav > ul > li > ul {
   background-color: transparent;
 }
 
-nav > ul > li.active a, nav > ul > li > ul > li.active a {
+nav > ul > li.active a, 
+nav > ul > li > ul > li.active a {
   border-left: 10px solid #A58400;
+}
+nav > ul > li.active > ul > li a {
+  border-left: 10px solid transparent;
+}
+nav > ul > li.active > ul > li a:hover,
+nav > ul > li.active > ul > li a:focus {
+  border-left: 10px solid #7C6300;
 }
 
 nav a:link,
