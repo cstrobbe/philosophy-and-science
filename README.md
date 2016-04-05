@@ -20,3 +20,9 @@ Source: [Peony nebula (NASA) on Wikimedia](https://commons.wikimedia.org/wiki/Fi
 * `David_MortDeSocrate.jpg`: public domain. 
 Source: [Jacques-Louis David: La Mort de Socrate / The Death of Socrates](https://commons.wikimedia.org/wiki/File:David_-_The_Death_of_Socrates.jpg).
 
+
+## Contributing
+I do not really expect external contributions. 
+However, everyone who makes a pull request to contribute content should explicitly state 
+in the pull request's description that they make their contribution available under the CC BY-NC-SA 4.0 licence.
+
