@@ -112,7 +112,7 @@ rp, rt {
   font-style: italic;
 }
 
-.hidden {
+.hidden, .notyet {
   display: none;
 }
 
