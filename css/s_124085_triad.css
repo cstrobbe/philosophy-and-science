@@ -61,6 +61,7 @@ h1 .h1txt {
 nav {
   background-color: #EEC62A;
   color: inherit;
+  border-radius: 4px;
 }
 
 nav h2 {
@@ -184,7 +185,9 @@ main ul li {
   padding: 0.25em 40px;
   line-height: 1.45;
   position: relative;
+  background-color: transparent;
   color: #222222;
+  border: 0;
 }
 #introquote:before {
   display: block;
