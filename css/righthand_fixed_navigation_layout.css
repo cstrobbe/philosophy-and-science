@@ -1,6 +1,6 @@
 
 header, nav, main, footer {
-  /*max-width: 60em;*/
+  max-width: 45em; /*max-width: 60em;*/
   clear: both;
   display: block;
   margin-left: 20px;
@@ -17,9 +17,11 @@ header {
 
 nav {
   position: fixed;
-  width: 16em; height: auto;
+  width: 16em; 
+  height: auto;
   padding: none;
-  top: .5em; right: 20px; bottom: auto; left: auto;
+  top: .5em; right: 20px; bottom: auto; 
+  left: auto;
   padding-bottom: 10px;
 }
 
@@ -81,6 +83,10 @@ main a, footer a {
   padding-right: 2px; padding-left: 2px;
 }
 
+main h2 {
+  margin-top: 30px;
+}
+
 aside {
   padding: 20px;
 }
@@ -108,7 +114,7 @@ rp, rt {
   display: none;
 }
 
-.booktitle, .journal, .magazine, .newspaper, .website {
+.booktitle, .journal, .proceedings, .magazine, .newspaper, .website, .blog {
   font-style: italic;
 }
 
