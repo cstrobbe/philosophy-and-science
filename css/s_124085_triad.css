@@ -198,6 +198,14 @@ main ul li {
   top: -20px;
   color: #7a7a7a;
 }
+
+blockquote {
+  background-color: #FDDB58;
+  color: #321900;
+  padding: 4px 12px;
+  border: 2px solid #FDDB58;
+  border-radius: 10px;
+}
 blockquote cite {
   color: #555;
   font-size: 14px;
@@ -208,3 +216,33 @@ blockquote cite {
 blockquote cite:before {
   content: "\2014 \2009";
 }
+
+dt, dd {
+  border-bottom: 1px solid  #7C3100;
+  color: inherit;
+  line-height: 1.4em;
+  padding-left: 4px;
+}
+dt {
+  background-color: #FDDB58;
+  margin-top: 4px;
+  font-weight: bolder;
+}
+dd {
+  border-left: 1px solid #7C3100;
+  margin-top: 2px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 12pt;
+}
+th, td {
+  border: 1px solid gray;
+  padding: 4px;
+}
+tbody tr th {
+  text-align: left;
+}
+
+

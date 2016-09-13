@@ -1,6 +1,6 @@
 
 header, nav, main, footer {
-  max-width: 45em; /*max-width: 60em;*/
+  max-width: 45em; /* The 70em specified in WCAG-TECH C20 is much too wide: https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C20 */
   clear: both;
   display: block;
   margin-left: 20px;
@@ -27,6 +27,7 @@ nav {
 
 nav h2 {
   margin-top: 6px; margin-bottom: 0;
+  font-size: 1.4em;
 }
 
 nav a { 
@@ -114,7 +115,7 @@ rp, rt {
   display: none;
 }
 
-.booktitle, .journal, .proceedings, .magazine, .newspaper, .website, .blog {
+.booktitle, .journal, .proceedings, .conference, .editedvolume, .phdthesis, .magazine, .newspaper, .website, .blog {
   font-style: italic;
 }
 
@@ -128,4 +129,9 @@ rp, rt {
   margin-top: 30px;
   margin-left: 0;
 }
+
+a.imgurl, a.imgurl:visited, a.imgurl:hover, a.imgurl:focus, a.imgurl:active, a.imgurl {
+  border: none; padding: none; background: transparent;
+}
+
 
