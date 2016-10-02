@@ -19,7 +19,7 @@ nav {
   position: fixed;
   width: 16em; 
   height: auto;
-  padding: none;
+  /*padding: 0;*//*'none' is not valid; '0' has undesired effect*/
   top: .5em; right: 20px; bottom: auto; 
   left: auto;
   padding-bottom: 10px;
@@ -131,7 +131,7 @@ rp, rt {
 }
 
 a.imgurl, a.imgurl:visited, a.imgurl:hover, a.imgurl:focus, a.imgurl:active, a.imgurl {
-  border: none; padding: none; background: transparent;
+  border: none; padding: 0; background: transparent;
 }
 
 
