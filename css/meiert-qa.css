@@ -1,0 +1,141 @@
+/*
+qa-style-sheet v1.3 https://github.com/j9t/qa-style-sheet
+
+Copyright 2011 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the “License”);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an “AS IS” BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+/* Deprecated elements */
+
+applet,
+basefont,
+center,
+dir,
+font,
+isindex,
+menu,
+s,
+spacer,
+strike,
+u {
+  outline: 2px solid #900 !important;
+}
+
+/* Layout tables */
+
+table table {
+  outline: 2px solid #900 !important;
+}
+
+/* Decorative or inaccessible images */
+
+img {
+  outline: 2px solid #900 !important;
+}
+
+img[alt] {
+  outline: 0 !important;
+}
+
+img[alt=''] {
+  outline: 2px solid #fe8 !important;
+}
+
+/* Empty or non-HTML links */
+
+a[href=''] {
+  outline: 2px solid #900 !important;
+}
+
+a[href$='.gif'],
+a[href$='.jpg'],
+a[href$='.jpeg'],
+a[href$='.pdf'],
+a[href$='.png'] {
+  outline: 2px solid #fe8 !important;
+}
+
+/* Empty elements not used for scripting */
+
+p:empty,
+div:empty,
+li:empty,
+th:empty,
+td:empty,
+span:empty {
+  outline: 2px solid #fe8 !important;
+}
+
+p[id],
+div[id],
+li[id],
+th[id],
+td[id],
+span[id] {
+  outline: 0 !important;
+}
+
+/* Maintenance traps */
+
+[style] {
+  outline: 2px solid #900 !important;
+}
+
+head {
+  display: block !important;
+  font: normal 75%/1.5 verdana, sans-serif !important;
+}
+
+link {
+  display: inline !important;
+}
+
+link[rel='stylesheet'] ~ link[rel='stylesheet']:after,
+style:before {
+  background: #fe8 !important;
+  padding: .2em !important;
+}
+
+link[rel='stylesheet']:not(#x-qa) ~ link[rel='stylesheet']:not(#x-qa):after {
+  content: 'Two or more style sheets detected ☹' !important;
+}
+
+style {
+  display: block !important;
+  font-family: courier, monospace !important;
+  height: 3em !important;
+  overflow: hidden !important;
+  width: 200px !important;
+}
+
+style:before {
+  content: 'Style element detected ☹' !important;
+  font: normal 1em/1.5 verdana, sans-serif !important;
+}
+
+/* Status indicator */
+
+body:before {
+  background: #fff8e7;
+  color: #000;
+  content: 'QA check done \2713';
+  display: inline;
+  font-weight: 700;
+}
+
+/* Update indicator */
+
+body {
+  background-image: url(https://hell.meiert.org/core/png/qa-1.4.png) !important;
+}
