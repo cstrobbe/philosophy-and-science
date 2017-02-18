@@ -18,19 +18,421 @@ limitations under the License.
 
 /* Deprecated elements */
 
+acronym,
 applet,
 basefont,
+bgsound,
+big,
+blink,
 center,
 dir,
 font,
+hgroup,
 isindex,
+listing,
+marquee,
 menu,
+multicol,
+nextid,
+noembed,
+nobr,
+noframes,
+plaintext,
 s,
 spacer,
 strike,
-u {
+tt,
+u,
+xmp {
   outline: 2px solid #900 !important;
 }
+
+/* Obsolete attributes */
+
+a[charset]:before,
+link[charset]:before {
+  content: 'charset attribute obsolete' !important;;
+}
+
+a[coords]:before {
+  content: 'coords attribute obsolete' !important;;
+}
+
+a[methods]:before,
+link[methods]:before {
+  content: 'methods attribute obsolete' !important;
+}
+
+embed[name]:before,
+img[name]:before,
+option[name]:before {
+  content: 'name attribute obsolete; use id attribute instead' !important;
+}
+
+a[urn]:before,
+link[urn]:before {
+  content: 'urn attribute obsolete; use href attribute instead' !important;
+}
+
+form[accept]:before {
+  content: 'accept attribute on form obsolete; use accept on input element instead' !important;
+}
+
+area[nohref]:before {
+  content: 'nohref attribute obsolete and unnecessary' !important;
+}
+
+head[profile]:before {
+  content: 'profile attribute obsolete and unnecessary' !important;
+}
+
+html[version]:before {
+  content: 'version attribute obsolete and unnecessary' !important;
+}
+
+input[ismap]:before {
+  content: 'ismap attribute obsolete and unnecessary' !important;
+}
+
+input[usemap]:before {
+  content: 'usemap attribute obsolete; use img instead of input' !important;
+}
+
+img[lowsrc]:before {
+  content: 'usemap attribute obsolete' !important;
+}
+
+link[target]:before {
+  content: 'target attribute obsolete' !important;
+}
+
+object[archive]:before {
+  content: 'archive attribute obsolete' !important;
+}
+
+object[classid]:before {
+  content: 'classid attribute obsolete' !important;
+}
+
+object[code]:before {
+  content: 'code attribute obsolete' !important;
+}
+
+object[codebase]:before {
+  content: 'codebase attribute obsolete' !important;
+}
+
+object[codetype]:before {
+  content: 'codetype attribute obsolete' !important;
+}
+
+object[declare]:before {
+  content: 'declare attribute obsolete' !important;
+}
+
+object[standby]:before {
+  content: 'standby attribute obsolete' !important;
+}
+
+param[type]:before {
+  content: 'type attribute obsolete' !important;
+}
+
+param[valuetype]:before {
+  content: 'valuetype attribute obsolete' !important;
+}
+
+script[event]:before {
+  content: 'event attribute on script element obsolete' !important;
+}
+
+script[for]:before {
+  content: 'for attribute on script element obsolete' !important;
+}
+
+table[datapagesize]:before {
+  content: 'datapagesize attribute on table element obsolete' !important;
+}
+
+td[axis]:before, th[axis]:before {
+  content: 'axis attribute obsolete' !important;
+}
+
+th[scope]:before {
+  content: 'scope attribute on td element obsolete' !important;
+}
+
+a[datasrc]:before,
+applet[datasrc]:before,
+button[datasrc]:before,
+div[datasrc]:before,
+frame[datasrc]:before,
+iframe[datasrc]:before,
+img[datasrc]:before,
+input[datasrc]:before,
+label[datasrc]:before,
+legend[datasrc]:before,
+marquee[datasrc]:before,
+object[datasrc]:before,
+option[datasrc]:before,
+select[datasrc]:before,
+span[datasrc]:before,
+table[datasrc]:before,
+textarea[datasrc]:before {
+  content: 'datasrc attribute obsolete' !important;
+}
+
+a[datafld]:before,
+applet[datafld]:before,
+button[datafld]:before,
+div[datafld]:before,
+fieldset[datafld]:before,
+frame[datafld]:before,
+iframe[datafld]:before,
+img[datafld]:before,
+input[datafld]:before,
+label[datafld]:before,
+legend[datafld]:before,
+marquee[datafld]:before,
+object[datafld]:before,
+option[datafld]:before,
+select[datafld]:before,
+span[datafld]:before,
+table[datafld]:before,
+textarea[datafld]:before {
+  content: 'datafld attribute obsolete' !important;
+}
+
+buttton[dataformatas]:before,
+div[dataformatas]:before,
+input[dataformatas]:before,
+label[dataformatas]:before,
+legend[dataformatas]:before,
+marquee[dataformatas]:before,
+object[dataformatas]:before,
+option[dataformatas]:before,
+select[dataformatas]:before,
+span[dataformatas]:before,
+table[dataformatas]:before {
+  content: 'dataformatas attribute obsolete' !important;
+}
+
+/* remaining obsolete attributes listed alphabetically */
+
+caption[align]:before,
+col[align]:before,
+div[align]:before,
+embed[align]:before,
+hr[align]:before,
+h1[align]:before,
+h2[align]:before,
+h3[align]:before,
+h4[align]:before,
+h5[align]:before,
+h6[align]:before,
+iframe[align]:before,
+img[align]:before,
+input[align]:before,
+legend[align]:before,
+object[align]:before,
+p[align]:before,
+table[align]:before,
+tbody[align]:before,
+tfoot[align]:before,
+td[align]:before,
+th[align]:before,
+thead[align]:before,
+tr[align]:before {
+  content: 'align attribute obsolete' !important;
+}
+
+body[alink]:before {
+  content: 'alink attribute obsolete' !important;
+}
+
+iframe[allowtransparency]:before {
+  content: 'allowtransparency attribute obsolete' !important;
+}
+
+body[background]:before, 
+table[background]:before, 
+tbody[background]:before, 
+td[background]:before, 
+tfoot[background]:before, 
+th[background]:before, 
+thead[background]:before, 
+tr[background]:before {
+  content: 'background attribute obsolete' !important;
+}
+
+body[bgcolor]:before,
+table[bgcolor]:before,
+tr[bgcolor]:before {
+  content: 'bgcolor attribute obsolete' !important;
+}
+
+img[border]:before,
+object[border]:before {
+  content: 'border attribute obsolete' !important;
+}
+
+table[bordercolor]:before {
+  content: 'bordercolor attribute obsolete' !important;
+}
+
+table[cellpadding]:before {
+  content: 'cellpadding attribute obsolete' !important;
+}
+
+table[cellspacing]:before {
+  content: 'cellspacing attribute obsolete' !important;
+}
+
+col[char]:before,
+tbody[char]:before,
+td[char]:before,
+th[char]:before,
+tfoot[char]:before,
+thead[char]:before,
+tr[char]:before {
+  content: 'char attribute obsolete' !important;
+}
+
+col[charoff]:before,
+tbody[charoff]:before,
+td[charoff]:before,
+th[charoff]:before,
+tfoot[charoff]:before,
+thead[charoff]:before,
+tr[charoff]:before {
+  content: 'charoff attribute obsolete' !important;
+}
+
+br[clear]:before {
+  content: 'clear attribute obsolete' !important;
+}
+
+hr[color]:before {
+  content: 'color attribute obsolete' !important;
+}
+
+dl[compact]:before,
+ol[compact]:before,
+ul[compact]:before {
+  content: 'compact attribute obsolete' !important;
+}
+
+table[frame]:before {
+  content: 'frame attribute obsolete' !important;
+}
+
+iframe[frameborder]:before {
+  content: 'frameborder attribute obsolete' !important;
+}
+
+td[height]:before,
+th[height]:before {
+  content: 'height attribute obsolete' !important;
+}
+
+embed[hspace]:before,
+iframe[hspace]:before,
+img[hspace]:before,
+input[hspace]:before,
+object[hspace]:before {
+  content: 'hspace attribute obsolete' !important;
+}
+
+body[link]:before {
+  content: 'link attribute obsolete' !important;
+}
+
+body[marginbottom]:before {
+  content: 'marginbottom attribute obsolete' !important;
+}
+
+
+body[marginheight]:before,
+iframe[marginheight]:before {
+  content: 'marginheight attribute obsolete' !important;
+}
+
+body[marginleft]:before {
+  content: 'marginleft attribute obsolete' !important;
+}
+
+body[marginright]:before {
+  content: 'marginright attribute obsolete' !important;
+}
+
+body[margintop]:before {
+  content: 'margintop attribute obsolete' !important;
+}
+
+body[marginwidth]:before,
+iframe[marginwidth]:before {
+  content: 'marginwidth attribute obsolete' !important;
+}
+
+hr[noshade]:before {
+  content: 'noshade attribute obsolete' !important;
+}
+
+td[nowrap]:before,
+th[nowrap]:before {
+  content: 'nowrap attribute obsolete' !important;
+}
+
+table[rules]:before {
+  content: 'rules attribute obsolete' !important;
+}
+
+iframe[scrolling]:before {
+  content: 'scrolling attribute obsolete' !important;
+}
+
+hr[size]:before {
+  content: 'size attribute obsolete' !important;
+}
+
+body[text]:before {
+  content: 'text attribute obsolete' !important;
+}
+
+li[type]:before,
+ul[type]:before {
+  content: 'type attribute obsolete' !important;
+}
+
+tbody[valign]:before,
+td[valign]:before,
+th[valign]:before,
+tfoot[valign]:before,
+thead[valign]:before,
+tr[valign]:before {
+  content: 'valign attribute obsolete' !important;
+}
+
+body[vlink]:before {
+  content: 'vlink attribute obsolete' !important;
+}
+
+embed[vspace]:before,
+img[vspace]:before,
+iframe[vspace]:before,
+object[vspace]:before {
+  content: 'vspace attribute obsolete' !important;
+}
+
+col[width]:before,
+hr[width]:before,
+pre[width]:before,
+table[width]:before,
+td[valign]:before,
+th[valign]:before {
+  content: 'valign attribute obsolete' !important;
+}
+
 
 /* Layout tables */
 
