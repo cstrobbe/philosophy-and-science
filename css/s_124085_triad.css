@@ -216,6 +216,10 @@ blockquote cite {
 blockquote cite:before {
   content: "\2014 \2009";
 }
+li blockquote { 
+  margin: 4px 0;
+}
+li blockquote p { margin: 0; padding: 0;}
 
 dt, dd {
   border-bottom: 1px solid  #7C3100;
