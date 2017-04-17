@@ -172,7 +172,7 @@ h2, h3, h4, h5, h6 {
   background-color: transparent;
 }
 
-main ul li {
+main ul > li {
   /*list-style-type: square;*/
   list-style-image: url('../img/orangebrown_listsquare.png');
 }
@@ -216,9 +216,7 @@ blockquote cite {
 blockquote cite:before {
   content: "\2014 \2009";
 }
-li blockquote { 
-  margin: 4px 0;
-}
+li blockquote { margin: 4px 0;}
 li blockquote p { margin: 0; padding: 0;}
 
 dt, dd {
