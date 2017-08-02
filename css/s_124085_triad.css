@@ -3,6 +3,7 @@
 body {
   font-family: 'Libre Baskerville', 'Trebuchet MS', Verdana, Helvetica, sans-serif;
   background-color: transparent; color: #282828;
+  font-size: 1em; line-height: 1.4em;
 }
 
 header {
@@ -42,7 +43,7 @@ header {
 }
 
 #homepage h1, .philsciencepage h1, .philosophypage h1, .sciencepage h1 { 
-  font-size: 3.2em; letter-spacing: 1.3px; 
+  font-size: 3em; letter-spacing: 1.3px; 
   padding: 20px 0 0 20px;
   margin: 0 0 0 0;
   color: #fff /*#FDDB58*/ /*#89A0C2*/;
