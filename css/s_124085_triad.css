@@ -248,4 +248,9 @@ tbody tr th {
   text-align: left;
 }
 
+del {
+  color: gray; background: transparent; 
+  font-size: 0.8em;
+}
+
 
