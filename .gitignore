@@ -2,7 +2,6 @@
 *.marks
 *.md~*
 *.bak.html
-*.html.html
 *.new.html
 *.old.html
 *.html~
