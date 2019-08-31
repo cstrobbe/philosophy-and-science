@@ -49,7 +49,7 @@
   }
 
 
-  #introquote {
+  #introquote, .introquote {
     font-size: 1.1em;
     font-style: italic;
     width: 700px;
