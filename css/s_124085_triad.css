@@ -201,19 +201,19 @@ main ul > li {
 }
 
 blockquote {
-  background-color: #FDDB58;
+  background-color: transparent /*#FDDB58*/;
   color: #321900;
   padding: 4px 12px;
   border: 2px solid #FDDB58;
   border-radius: 10px;
 }
+
 blockquote cite {
   color: #555;
   font-size: 14px;
   display: block;
   margin-top: 5px;
 }
- 
 blockquote cite:before {
   content: "\2014 \2009";
 }
