@@ -200,14 +200,30 @@ main ul > li {
   color: #7a7a7a;
 }
 
-blockquote {
+div.blockquote, blockquote {
   background-color: transparent /*#FDDB58*/;
   color: #321900;
-  padding: 4px 12px;
   border: 2px solid #FDDB58;
   border-radius: 10px;
 }
-
+div.blockquote {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  /* left & right margin should match those for normal blockquote; only checked in Firefox:*/
+  margin-left: 40px;
+  margin-right: 38px;
+}
+div.blockquote > blockquote {
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 0;
+}
+blockquote {
+  padding: 4px 12px;
+}
 blockquote cite {
   color: #555;
   font-size: 14px;
