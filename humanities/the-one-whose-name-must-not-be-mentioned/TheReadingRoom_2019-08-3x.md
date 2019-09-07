@@ -14,3 +14,11 @@ These are screenshots of discussion anyone can access; see
 and
 [The Reading Room, transcript, 2019-08-31](https://chat.stackexchange.com/transcript/1037/2019/8/31).
 In other words, these screenshots are not intended to disclose discussions that strictly private or confidential.
+
+The file
+[the-one-whose-name-must-not-be-mentioned_2019-08-30.md](the-one-whose-name-must-not-be-mentioned_2019-08-30.md)
+contains the original answer (in the markdown format used on Stack Exchange) submitted on 30.08.2019.
+
+The file
+[the-one-whose-name-must-not-be-mentioned_2019-09-07.md](the-one-whose-name-must-not-be-mentioned_2019-09-07.md)
+contains the revised answer submitted on 07.09.2019.
