@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Libre Baskerville', 'Trebuchet MS', Verdana, Helvetica, sans-serif;
-  background-color: transparent; color: #282828;
+  background-color: white; color: #282828;
   font-size: 1em; line-height: 1.4em;
 }
 
@@ -20,7 +20,7 @@ header {
   width: 1521px;
   max-width: 75% /*62em*/;
   padding: 0;
-  background: #09316D 50% 0 url('./Raphael_SchoolOfAthens.jpg') repeat-x; /* old IE fallback */
+  background: #09316D 50% 0 url('./Raphael_SchoolOfAthens.jpg') repeat-x; /*old IE fallback*/
   background-position: left;
 }
 
@@ -29,7 +29,7 @@ header {
   width: 1598px;
   max-width: 75% /*62em*/;
   padding: 0;
-  background: #09316D 50% 0 url('./PeonyNebula.jpg') repeat-x; /* old IE fallback */
+  background: #09316D 50% 0 url('./PeonyNebula.jpg') repeat-x; /*old IE fallback*/
   background-position: left;
 }
 
@@ -38,7 +38,7 @@ header {
   width: 1368px;
   max-width: 75% /*62em*/;
   padding: 0;
-  background: #09316D 50% 0 url('./David_MortDeSocrate.jpg') repeat-x; /* old IE fallback */
+  background: #09316D 50% 0 url('./David_MortDeSocrate.jpg') repeat-x; /*old IE fallback*/
   background-position: left;
 }
 
@@ -268,5 +268,4 @@ del {
   color: gray; background: transparent; 
   font-size: 0.8em;
 }
-
 
