@@ -134,4 +134,5 @@ a.imgurl, a.imgurl:visited, a.imgurl:hover, a.imgurl:focus, a.imgurl:active, a.i
   border: none; padding: 0; background: transparent;
 }
 
+textarea { resize: both; }
 
