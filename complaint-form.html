@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Complaint Form | Philosophy and Science</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="http://cstrobbe.github.io/philosophy-and-science/css/s_124085_triad.css" title="Three-colour scheme" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="http://cstrobbe.github.io/philosophy-and-science/css/systemcolours.css" title="System colours" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="http://cstrobbe.github.io/philosophy-and-science/css/default.css" title="No colours" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="http://cstrobbe.github.io/philosophy-and-science/css/meiert-qa.css" title="Meiert's QA Stylesheet" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <base id="base-url" href="http://cstrobbe.github.io/philosophy-and-science/" />
+  <script>
+    let baseElem = document.getElementById("base-url");
+    let currentUrl = document.URL;
+    let onGithub = currentUrl.includes("cstrobbe.github.io");
+    if (!onGithub) {
+      baseElem.parentNode.removeChild(baseElem);
+    }
+  </script>
+  <style>
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span class="h1txt">Complaint Form</span></h1>
+  </header>
+
+  <main id="main">
+    <p>You have a complaint? Great! Submit it here!</p>
+    <p>Form fields with an invisible asterisk are required fields.</p>
+    <form action="404.html" method="post" name="whocares">
+      <p><label for="lame-excuse">Type of complaint: </label>
+        <select id="lame-excuse" size="1" required="required">
+          <option value="" selected="selected">Select your preferred excuse</option>
+          <option value="book">I want to report something about a book</option>
+          <option value="rant">Nothing in particular. I just enjoy a good rant.</option>
+          <option value="doom">The world is doomed :-(</option>
+          <option value="dang">Just let me write the dang complaint!</option>
+        </select>
+      </p>
+      <p>
+        <textarea placeholder="Lalala" required="required" rows="10000" cols="78"></textarea>
+      </p>
+      <p><button type="submit">Submit complaint</button></p>
+    </form>
+  </main>
+
+  <footer>
+    <p class="licence">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+      <br />
+      <span>Philosophy and Science</span>
+      by
+      <a href="https://github.com/cstrobbe">Christophe Strobbe</a>
+      is licensed under a
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" lang="en-US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+    </p>
+    <p>This website is a cookie-free zone.</p>
+  </footer>
+</body>
+</html>
