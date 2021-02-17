@@ -19,6 +19,7 @@
     }
   </script>
   <style>
+    .invisible { color: transparent; font-size: 0.1em; }
   </style>
 </head>
 <body>
@@ -30,7 +31,7 @@
     <p>You have a complaint? Great! Submit it here!</p>
     <p>Form fields with an invisible asterisk are required fields.</p>
     <form action="404.html" method="get" name="whocares">
-      <p><label for="lame-excuse">Type of complaint: </label>
+      <p><label for="lame-excuse">Type of complaint<span class="invisible">*</span>: </label>
         <select id="lame-excuse" size="1" required="required">
           <option value="" selected="selected">Select your preferred excuse</option>
           <option value="book">I want to report something about a book</option>
@@ -39,8 +40,8 @@
           <option value="dang">Just let me write the dang complaint!</option>
         </select>
       </p>
-      <p>
-        <textarea minlength="1024" placeholder="Lalala" required="required" rows="10000" cols="78"></textarea>
+      <p><label for="therant">Get creative here. Write at least 1024 characters<span class="invisible">*</span>:</p>
+        <textarea id="therant" minlength="1024" placeholder="Lalala" required="required" rows="10000" cols="78"></textarea>
       </p>
       <p><button type="submit">Submit complaint</button></p>
     </form>
