@@ -3,6 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Complaint Form | Philosophy and Science</title>
+  <meta name="generator" content="Créé artisanalement à la main ;-)" lang="fr" />
   <link rel="stylesheet" type="text/css" media="screen" href="http://cstrobbe.github.io/philosophy-and-science/css/s_124085_triad.css" title="Three-colour scheme" />
   <link rel="alternate stylesheet" type="text/css" media="screen" href="http://cstrobbe.github.io/philosophy-and-science/css/systemcolours.css" title="System colours" />
   <link rel="alternate stylesheet" type="text/css" media="screen" href="http://cstrobbe.github.io/philosophy-and-science/css/default.css" title="No colours" />
@@ -20,6 +21,19 @@
   </script>
   <style>
     .invisible { color: transparent; font-size: 0.1em; }
+    @media only screen and (max-device-width: 480px) {
+      .philosophypage header { background-image: none; width: 100%; height: auto; background-color: #09316; }
+      .philosophypage h1 { font-size: 1.8em; height: auto; margin: 0; }
+      .philosophypage h1, .philosophypage h1 * { background-color: transparent; color: white; }
+      header, nav, main, footer { width: 90%; }
+      /*@@todo: select list and textarea are still too wide*/
+      form p.narrow { display: block; }
+      form p.wide { display: none; }
+    }
+    @media only screen and (min-device-width: 480px) {
+      form p.narrow { display: none; }
+      form p.wide { display: block; }
+    }
   </style>
 </head>
 <body class="philosophypage">
@@ -31,7 +45,7 @@
     <p>You have a complaint? Great! Submit it here!</p>
     <p>Form fields with an invisible asterisk are required fields.</p>
     <form action="404.html" method="get" name="whocares">
-      <p><label for="lame-excuse">Type of complaint<span class="invisible">*</span>: </label>
+      <p class="wide"><label for="lame-excuse">Type of complaint<span class="invisible">*</span>: </label>
         <select id="lame-excuse" size="1" required="required">
           <option value="" selected="selected">Select your preferred excuse</option>
           <option value="book">I want to report something about a book</option>
@@ -40,8 +54,17 @@
           <option value="dang">Just let me write the dang complaint!</option>
         </select>
       </p>
+      <p class="narrow"><label for="lame-excuse-m">Type of complaint<span class="invisible">*</span>: </label>
+        <select id="lame-excuse-m" size="1" required="required">
+          <option value="" selected="selected">Select complaint type</option>
+          <option value="book-m">Something about a book</option>
+          <option value="rant-m">I just enjoy a good rant.</option>
+          <option value="doom-m">The world is doomed :-(</option>
+          <option value="dang-m">Damnit!</option>
+        </select>
+      </p>
       <p><label for="therant">Get creative here. Write at least 1024 characters<span class="invisible">*</span>:</p>
-        <textarea id="therant" minlength="1024" placeholder="Dies iræ, dies illa / Solvet sæclum in favilla, / Teste David cum Sibylla. " required="required" rows="10000" cols="78"></textarea>
+        <textarea id="therant" minlength="1024" placeholder="Dies iræ, dies illa&#013;Solvet sæclum in favilla,&#013;Teste David cum Sibylla. " required="required" rows="128" cols="40"></textarea>
       </p>
       <p><button type="submit">Submit complaint</button></p>
     </form>
@@ -51,7 +74,7 @@
     <p class="licence">
       <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
       <br />
-      <span>Philosophy and Science</span>
+      <a href="index.html">Philosophy and Science</a>
       by
       <a href="https://github.com/cstrobbe">Christophe Strobbe</a>
       is licensed under a
