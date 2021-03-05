@@ -64,7 +64,10 @@
         </select>
       </p>
       <p><label for="therant">Get creative here. Write at least 1024 characters<span class="invisible">*</span>:</label>
-        <textarea id="therant" minlength="1024" placeholder="Dies iræ, dies illa&#013;Solvet sæclum in favilla,&#013;Teste David cum Sibylla. " required="required" rows="128" cols="60"></textarea>
+        <textarea id="therant" minlength="1024" placeholder="Dies iræ, dies illa" required="required" rows="128" cols="60"></textarea>
+        <!--Line breaks in attribute values are not valid:
+        <textarea id="therant" minlength="1024" placeholder="Dies iræ, dies illa&#013;Solvet sæclum in favilla,&#013;Teste David cum Sibylla" required="required" rows="128" cols="60"></textarea>
+        -->
       </p>
       <p><button id="submit" type="submit">Submit complaint</button></p>
     </form>
@@ -76,7 +79,7 @@
       <br />
       <span class="sitename"><a href="index.html">Philosophy and Science</a></span>
       by
-      <a href="https://github.com/cstrobbe">Christophe Strobbe</a>
+      <a class="site-owner" href="https://github.com/cstrobbe">Christophe Strobbe</a>
       is licensed under a
       <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" lang="en-US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
     </p>
