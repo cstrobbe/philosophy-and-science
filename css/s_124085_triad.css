@@ -178,7 +178,7 @@ main ul > li {
   list-style-image: url('../img/orangebrown_listsquare.png');
 }
 
-#introquote, .introquote {
+#introquote, .introquote, .chapterintroquote {
   font-size: 1.1em;
   font-style: italic;
   width: 700px;
@@ -190,13 +190,30 @@ main ul > li {
   color: #222222;
   border: 0;
 }
-#introquote:before, .introquote:before {
+#introquote:before, .introquote:before, .chapterintroquote:before {
   display: block;
   content: "\201C";
   font-size: 80px;
   position: absolute;
   left: -20px;
   top: -20px;
+  color: #7a7a7a;
+}
+blockquote.chapterintroquote {
+  margin-bottom: 4px;
+  padding-bottom: 0;
+}
+blockquote.chapterintroquote p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+blockquote.chapterintroquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -4px;
+  top: -18px;
   color: #7a7a7a;
 }
 
