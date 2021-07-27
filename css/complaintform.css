@@ -1,0 +1,18 @@
+
+.invisible { color: transparent; font-size: 0.1em; }
+@media only screen and (max-width: 480px) {
+  .philosophypage header { background-image: none; width: 100%; height: auto; background-color: #09316D; }
+  .philosophypage h1 { font-size: 1.8em; height: auto; margin: 0; }
+  .philosophypage h1, .philosophypage h1 * { background-color: transparent; color: white; }
+  header, nav, main, footer { width: 90%; }
+  /*@@todo: select list and textarea are still too wide*/
+  form p.narrow { display: block; }
+  form p.wide { display: none; }
+}
+@media only screen and (min-width: 480px) {
+  form p.narrow { display: none; }
+  form p.wide { display: block; }
+}
+::placeholder { color: #991601; background-color: inherit;}
+.minLengthReached { border: 2px solid green; }
+

@@ -11,32 +11,9 @@
   <meta name="robots" content="noindex, nofollow" />
   <meta name="googlebot" content="noindex, nofollow" />
   <base id="base-url" href="http://cstrobbe.github.io/philosophy-and-science/" />
-  <script>
-    let baseElem = document.getElementById("base-url");
-    let currentUrl = document.URL;
-    let onGithub = currentUrl.includes("cstrobbe.github.io");
-    if (!onGithub) {
-      baseElem.parentNode.removeChild(baseElem);
-    }
-  </script>
-  <style>
-    .invisible { color: transparent; font-size: 0.1em; }
-    @media only screen and (max-width: 480px) {
-      .philosophypage header { background-image: none; width: 100%; height: auto; background-color: #09316D; }
-      .philosophypage h1 { font-size: 1.8em; height: auto; margin: 0; }
-      .philosophypage h1, .philosophypage h1 * { background-color: transparent; color: white; }
-      header, nav, main, footer { width: 90%; }
-      /*@@todo: select list and textarea are still too wide*/
-      form p.narrow { display: block; }
-      form p.wide { display: none; }
-    }
-    @media only screen and (min-width: 480px) {
-      form p.narrow { display: none; }
-      form p.wide { display: block; }
-    }
-    ::placeholder { color: #991601; background-color: inherit;}
-    .minLengthReached { border: 2px solid green; }
-  </style>
+  <script defer="defer" src="js/adaptabaseline.js"></script>
+  <script defer="defer" src="js/styletextarea-rant.js"></script>
+  <link rel="stylesheet" media="screen" href="css/complaintform.css" />
 </head>
 <body class="philosophypage">
   <header>
@@ -87,22 +64,5 @@
     </p>
     <p>This website is a cookie-free zone.</p>
   </footer>
-
-  <script>//adapted from https://stackoverflow.com/a/43837521/6002174
-    //const textarea = document.querySelector("textarea");
-    const textarea = document.getElementById("therant");
-    textarea.addEventListener("input", event => {
-      const target = event.currentTarget;
-      const minLength = target.getAttribute("minlength");
-      const currentLength = target.value.length;
-      if (currentLength >= minLength) {
-        textarea.className = "minLengthReached";
-        console.log("Minimum input length reached.");
-      } else if (currentLength < minLength) {
-        textarea.classList.remove("minLengthReached");
-        console.log("Minimum input length not reached.");
-      }
-    });
-  </script>
 </body>
 </html>
