@@ -1,5 +1,7 @@
 # Philosophy and Science
 
+**This repo has moved to [GitLab](https://gitlab.com/cstrobbe/philosophy-and-science).**
+
 Collection of links and resources related to philosophy, science
 and philosphy of science. 
 
